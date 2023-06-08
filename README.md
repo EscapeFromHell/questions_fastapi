@@ -17,4 +17,7 @@ Python, FastAPI, Pydantic, SQLAlchemy, Alembic, PostgreSQL, Docker
 http://127.0.0.1:8000/docs
 
 ## Пример POST-запроса:
+```bash
 curl -X 'POST' 'http://127.0.0.1:8000/api_v1/questions/?questions_num=1' -H 'accept: application/json' -d ''
+```
+Данный запрос вернет null при первом обращении, при последующих обращениях будет возвращен предыдущий сохраненный вопрос. 
